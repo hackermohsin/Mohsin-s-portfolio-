@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Medilab - Health and Wellness Center</title>
-  <meta name="description" content="Medilab is a leading medical facility providing top-quality, compassionate healthcare. Explore our services, departments, and book an appointment today.">
-  <meta name="keywords" content="medical, healthcare, doctor, hospital, appointment, cardiology, neurology">
+  <title>Index - Medilab with Tailwind CSS</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -52,6 +52,7 @@
     .departments .tab-pane { display: none; }
     .departments .tab-pane.active.show { display: block; }
     .php-email-form .loading, .php-email-form .error-message, .php-email-form .sent-message { display: none; }
+    body.mobile-nav-active { overflow: hidden; }
   </style>
 </head>
 
@@ -76,7 +77,6 @@
     <div class="container mx-auto px-4 flex items-center justify-between py-2.5">
       <a href="index.html" class="flex items-center z-50"><h1 class="text-3xl font-bold text-heading font-poppins">Medilab</h1></a>
       
-      <!-- Unified Navigation Menu -->
       <nav id="navmenu" class="hidden fixed inset-0 bg-white z-40 flex-col items-center justify-center 
                   xl:flex xl:relative xl:flex-row xl:bg-transparent xl:inset-auto xl:z-auto">
         <ul class="flex flex-col xl:flex-row items-center space-y-6 xl:space-y-0 xl:space-x-6 font-raleway">
@@ -219,18 +219,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Starter Section (from starter-page.html) -->
-    <section id="starter-section" class="py-16">
-      <div class="container mx-auto px-4 text-center mb-16 relative section-title" data-aos="fade-up">
-        <h2 class="text-4xl font-medium text-heading mb-5 pb-5 relative">Additional Content Section</h2>
-        <p class="max-w-2xl mx-auto text-gray-600">This section is an example of how to add new content blocks to your page.</p>
-      </div>
-      <div class="container mx-auto px-4" data-aos="fade-up">
-        <p class="text-center">This area was brought in from the starter page. It demonstrates that you can easily expand this single-page template with more sections as your content grows.</p>
-      </div>
-    </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="py-16">
       <div class="container mx-auto px-4">
@@ -296,11 +285,6 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="fixed bottom-4 right-4 w-10 h-10 bg-accent text-white flex items-center justify-center rounded-full transition-all duration-300 hover:bg-blue-700 opacity-0 invisible"><i class="bi bi-arrow-up-short text-2xl"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader" class="fixed inset-0 bg-white z-[999999] flex items-center justify-center">
-      <div class="w-16 h-16 border-4 border-t-accent border-r-accent border-gray-200 rounded-full animate-spin"></div>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
